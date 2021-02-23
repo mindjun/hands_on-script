@@ -7,10 +7,9 @@
 import functools
 import signal
 import time
+import logging
 
-
-class TimeoutExcept(Exception):
-    pass
+logger = logging.getLogger()
 
 
 def timeout(seconds, err_info='function call timeout'):
